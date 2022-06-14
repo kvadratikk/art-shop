@@ -1,0 +1,134 @@
+.home > .container {
+  padding: 65px 236px 55px 236px;
+}
+
+.filter {
+  background: var(--white);
+  padding: 20px;
+  border: 1px solid var(--gold);
+  max-width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter__properties {
+  margin-bottom: 20px;
+}
+
+.filter__quantity > input {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filter__submit {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pagination {
+  max-width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.pagination > input {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 19px;
+}
+
+.pagination > input:not(:last-child) {
+  margin-right: 5px;
+}
+
+.pagination > input:hover {
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+  color: var(--gold);
+}
+
+.pagination > .active {
+  color: var(--gold);
+  transform: scale(1.1);
+}
+
+.spinner {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 6px solid var(--main);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(16, 16, 16, 0.5);
+}
+
+.spinner:before {
+  content: '';
+  position: absolute;
+  top: -6.5px;
+  left: -6.5px;
+  width: 100%;
+  height: 100%;
+  border: 6px solid transparent;
+  border-top: 6px solid #cda1a7;
+  border-right: 6px solid #cda1a7;
+  border-radius: 50%;
+  animation: animateCircle 2s linear infinite;
+}
+
+.spinner span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes animateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+.not-found {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+@media screen and (max-width: 1320px) {
+  .home > .container {
+    padding: 65px 20px 55px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .filter {
+    max-width: 100%;
+  }
+}

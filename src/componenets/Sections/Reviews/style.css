@@ -1,0 +1,9 @@
+.reviews > .container {
+  padding: 65px 236px 43px 236px;
+}
+
+@media screen and (max-width: 1420px) {
+  .reviews > .container {
+    padding: 65px 20px 43px 20px;
+  }
+}

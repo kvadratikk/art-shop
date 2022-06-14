@@ -1,0 +1,17 @@
+.review-cards {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.review-cards__item {
+  max-width: 460px;
+  justify-self: center;
+}
+
+@media screen and (max-width: 500px) {
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+}

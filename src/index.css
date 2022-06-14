@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('assets/fonts/avenir-lt-55-roman.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AvenirM';
+  src: url('assets/fonts/avenir-lt-65-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('assets/fonts/Baskerville\ Regular.woff2') format('woff2');
+}
+
+:root {
+  --white: #fff;
+  --dark: #3c2b23;
+  --gold: #a78c70;
+  --main: #997261;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 19.04px;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+  font-family: 'Avenir';
+}
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+section > .container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a:hover {
+  color: var(--main);
+  transition: ease 0.2s;
+}
+
+.active {
+  color: var(--main);
+}
+
+.title {
+  margin-bottom: 65px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 56.16px;
+  font-family: 'Baskerville';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  height: 100%;
+  flex: 1 1 auto;
+  background: rgba(167, 140, 112, 0.15);
+}
